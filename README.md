@@ -2,6 +2,8 @@
 
 Docker image for [Err](http://errbot.net), a chat-bot designed to be easily deployable, extensible and maintainable.
 
+This image is based on the popular [Alpine Linux](alpinelinux.com) project, available in the [alpine official image](https://hub.docker.com/_/alpine/). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
+
 ## Usage
 
 This container can be started in three different modes:
@@ -42,11 +44,13 @@ Some plugins require additional dependencies that may not be installed in the vi
 * The bot is run under its own user account (*err*), not as root.
 * SSH is set up to automatically add unknown host keys (*StrictHostKeyChecking no*).
 
-## Credits
-
-This is a modified version of https://github.com/zoni/docker-err to run on Alpine, with no support for Python2. Credit for the bash scripts goes to
-
 ## TO-DO:
 
 * Review the storage volume settings
 * Clean useless packages.
+
+-----
+
+### Credits
+
+This is a modified version of https://github.com/zoni/docker-err to run on Alpine, with no support for Python2. Credit for the bash scripts goes to
