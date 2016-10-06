@@ -56,4 +56,4 @@ Some plugins require additional dependencies that may not be installed in the vi
 
 ### Credits
 
-This is a modified version of https://github.com/zoni/docker-err to run on Alpine, with no support for Python2. Credit for the bash scripts goes to
+This is a modified version of https://github.com/zoni/docker-err to run on Alpine, with no support for Python2. Credit for the bash scripts goes to him.
