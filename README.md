@@ -3,6 +3,9 @@
 [![](https://images.microbadger.com/badges/image/kriev/errbot-alpine.svg)](https://microbadger.com/images/kriev/errbot-alpine "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/kriev/errbot-alpine.svg)](https://microbadger.com/images/kriev/errbot-alpine "Get your own version badge on microbadger.com")
 
+[![](https://images.microbadger.com/badges/image/kriev/errbot-alpine:python2.svg)](https://microbadger.com/images/kriev/errbot-alpine:python2 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/kriev/errbot-alpine:python2.svg)](https://microbadger.com/images/kriev/errbot-alpine:python2 "Get your own version badge on microbadger.com")
+
 Docker image for [Err](http://errbot.net), a chat-bot designed to be easily deployable, extensible and maintainable.
 
 This image is based on the popular [Alpine Linux](alpinelinux.com) project, available in the [alpine official image](https://hub.docker.com/_/alpine/). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
