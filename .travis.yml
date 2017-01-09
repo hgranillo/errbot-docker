@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -f Dockerfile . -t err-alpine-python3
+  - docker build -f Dockerfile2 . -t err-alpine-python2
