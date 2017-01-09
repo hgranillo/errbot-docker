@@ -1,4 +1,5 @@
 sudo: required
+language: generic
 
 services:
   - docker
@@ -6,3 +7,7 @@ services:
 install:
   - docker build -f Dockerfile . -t err-alpine-python3
   - docker build -f Dockerfile2 . -t err-alpine-python2
+
+script:
+  - docker images | grep err-alpine-python2
+  - docker images | grep err-alpine-python3
