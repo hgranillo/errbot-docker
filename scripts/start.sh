@@ -4,7 +4,7 @@ set -o nounset
 set -o errexit
 
 usage() {
-	echo "Usage:" 2>&1
+    echo "Usage:" 2>&1
 	echo "" 2>&1
 	echo "  shell       -- Start an interactive user shell" 2>&1
 	echo "  rootshell   -- Start an interactive root shell" 2>&1
@@ -30,7 +30,9 @@ case $cmd in
 		;;
 	"err")
 		cd /err
-                chown err:err /err/data
+		chown err:err /err/data
+		set +o nounset                
+		source virtualenv/bin/activate
 		gosu err /err/virtualenv/bin/errbot "$@"
 		;;
 	*)
